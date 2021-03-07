@@ -8,18 +8,44 @@
     <title>Rock Paper Scissors!</title>
 </head>
 <body>
-    <img src="/assets/left-bg.svg" class = "left-bg">
-    <img src="/assets/right-bg.svg" class ="right-bg">
+    <img src="assets/left-bg.svg" class = "left-bg">
+    <img src=" assets/right-bg.svg" class ="right-bg">
     <section class="start-menu">
         <header>
             <h1><span class="red">Rock </span>Paper <span class="blue">Scissors</span>!</h1>
         </header>
         <div class="icon-grid">
-            <img src="/assets/rock.svg" alt="" class="rock-svg">
-            <img src="/assets/paper.svg" alt="" class="paper-svg">
-            <img src="/assets/scissors.svg" alt="" class="scissors-svg">
+            <img src="assets/rock.svg" alt="" class="rock-svg">
+            <img src="assets/paper.svg" alt="" class="paper-svg">
+            <img src="assets/scissors.svg" alt="" class="scissors-svg">
         </div>
         <button class="play-btn">PLAY</button>
+    </section>
+
+    <section class="game-page hide">
+        
+        <div class="score-box">   
+            <div class="player-box">player</div>
+            <div class="player-score">0</div>
+            <div class="computer-score">0</div>
+            <div class="computer-box">computer</div>
+        </div>
+
+        <div class="hands-box">
+            <img src="/game-assets/l-rock.svg" alt="" class="left-hand">
+            <img src="/game-assets/r-rock.svg" alt="" class="right-hand">
+        </div>
+
+        <h2>Choose your option!</h2>
+        <br><br>
+        <div class="button-grid">
+            <button class="rock-btn">rock</button>
+            <button class="paper-btn">paper</button>
+            <button class="scissors-btn">scissors</button>
+            
+            <button class="restart-btn">restart</button>
+        </div>
+        
     </section>
 
     <script src="js/index.js"></script>
