@@ -197,18 +197,17 @@ BTN HOVER */
     font-size: 34px;
 }
 
-.button-grid{
-
+.options{
+    margin-top: 3%;
     width: 500px;
-    
     display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50px)
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(1, 50px);
+    justify-content: center;
 }
 
-.button-grid button{
-    width: 150px;
+.options button{
     border-radius: 10px;
     letter-spacing: 2px;
     font-size: 1.5em;
@@ -222,23 +221,33 @@ BTN HOVER */
 }
 
 .restart-btn{
+    margin-top: 20px;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
     background: white;
     border: none;
     color: #2C3E50;
-    grid-column: 2;
+    position: relative;
 }
 
-.button-grid button:hover{
+
+/* TODO: change restart-btn hover */
+.options button:hover, .restart-btn:hover{
     transform: translateY(-10px);
     transition: transform .3s ease-in-out;
 }
 
 .hands-box{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.right-hand, .left-hand{
+.player-hand, .computer-hand{
     padding: 10px;
 
 }
@@ -255,6 +264,37 @@ BTN HOVER */
     display: none;
 }
 
+/* animations */
+
+@keyframes shake{
+    0%{
+        transform: translateY(0px);
+    }
+    15%{
+        transform: translateY(-50px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    35%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    65%{
+        transform: translateY(-50px);
+    }
+    75%{
+        transform: translateY(0px);
+    }
+    85%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
 
 
 
