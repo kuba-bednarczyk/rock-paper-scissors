@@ -237,8 +237,13 @@ BTN HOVER */
 
 
 /* TODO: change restart-btn hover */
-.options button:hover, .restart-btn:hover{
+.options button:hover{
     transform: translateY(-10px);
+    transition: transform .3s ease-in-out;
+}
+
+.restart-btn:hover{
+    transform: translateX(12.5px);
     transition: transform .3s ease-in-out;
 }
 
