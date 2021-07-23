@@ -43,8 +43,8 @@ const playGame = () => {
     options.forEach(option => {
         option.addEventListener('click', function() {
 
-            playerHand.src = 'game-assets/l-rock.svg';
-            computerHand.src = 'game-assets/r-rock.svg';
+            playerHand.src = 'assets/game-assets/l-rock.svg';
+            computerHand.src = 'assets/game-assets/r-rock.svg';
 
             //computer choice
             const computerNumber = Math.floor(Math.random()*3);
@@ -55,8 +55,8 @@ const playGame = () => {
             compare(this.textContent, computerChoice);
 
             //update svgs
-            playerHand.src = `game-assets/l-${this.textContent}.svg`;
-            computerHand.src = `game-assets/r-${computerChoice}.svg`;
+            playerHand.src = `assets/game-assets/l-${this.textContent}.svg`;
+            computerHand.src = `assets/game-assets/r-${computerChoice}.svg`;
         },2000);
             //animation
             playerHand.style.animation = "shake 2s ease";
@@ -121,9 +121,9 @@ const compare = (playerChoice, computerChoice) => {
     
 };
 
-restartGame = () => {
-    playerHand.src = 'game-assets/l-rock.svg';
-    computerHand.src = 'game-assets/r-rock.svg';
+ const restartGame = () => {
+    playerHand.src = 'assets/game-assets/l-rock.svg';
+    computerHand.src = 'assets/game-assets/r-rock.svg';
 
     playerScore = 0;
     playerScoreDiv.textContent = '0';
